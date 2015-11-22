@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data product presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Data product presentation">
+  <meta name="author" content="Ignacio Reboredo">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/rNVD3.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="libraries/widgets/nvd3/js/fisheye.js"></script>
+
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Data product presentation</h1>
+    <h2>Course Project. Shiny Application and Reproducible Pitch</h2>
+    <p>Ignacio Reboredo<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Exploratory analysis tool on mtcars dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This shiny app allows to conduct an exploratory analysis over a dataset of cars to explore the relationship between car’s transmission and miles per gallon (mpg) taking into consideration the potential influence of other variables</p>
+
+<div style='text-align: center;'>
+    <img height='450' src='image1.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to use it (options)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>The sidebar panel</strong> allows to chose:</p>
+
+<ul>
+<li>The x axis variable you want to plot against the mpg (miles per galon)</li>
+<li>Include the linear regresion on the plot (&quot;Regresions line and confidence interval&quot; checkbox)</li>
+<li>If <em>Regesion line and confidence interval</em> checkbox is selected, the you can determine the confidence interval (70% to 97.5%) you want to show on the plot</li>
+</ul>
+
+<div style='text-align: center;'>
+    <img height='350' src='image2.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How it looks like (plot tab)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The Y axis represent &quot;miles per galon&quot;&quot;. X axis variable can be chosen on the sidebar menu</li>
+<li>Points in red represent automatic transmision cars. Blue points represent manual cars</li>
+<li>Particular implementation: mph vs hp, without confidence interval (R code to generate this plot can be seen on the .Rmd file included on the Github directory)</li>
+</ul>
+
+<p><img src="assets/fig/plot1-1.png" title="plot of chunk plot1" alt="plot of chunk plot1" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>How it looks like (plot tab)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Regresion line is red for automatic cars and blue for manual ones</li>
+<li>Confidence interval is shown by a grey shadow</li>
+<li>Particular implementation: mph vs hp, with a confidence interval of 95% (R code to generate this plot can be seen on the .Rmd file included on the Github directory)</li>
+</ul>
+
+<p><img src="assets/fig/plot2-1.png" title="plot of chunk plot2" alt="plot of chunk plot2" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Exploratory analysis tool on mtcars dataset'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How to use it (options)'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How it looks like (plot tab)'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='How it looks like (plot tab)'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
